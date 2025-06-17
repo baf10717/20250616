@@ -8,6 +8,7 @@ Run `python hello.py` to print a greeting.
 ## Revit Add-in
 When run from **Add-Ins -> External Tools**, the add-in shows a task dialog that says "Hello Codex!".
 
+jg62no-codex/示範如何使用codex
 ### Build and Deploy
 1. Set the `REVIT_API_PATH` environment variable to the folder that contains
    `RevitAPI.dll` and `RevitAPIUI.dll`.
@@ -19,3 +20,4 @@ When run from **Add-Ins -> External Tools**, the add-in shows a task dialog that
    with the `HelloCodex.addin` manifest to
    `C:\Users\Administrator\AppData\Roaming\Autodesk\Revit\Addins\2022`.
 3. Start Revit 2022 and choose **HelloCodex** from **Add-Ins -> External Tools**.
+

@@ -1,4 +1,5 @@
 @echo off
+
 setlocal
 
 REM Build and deploy HelloCodex Revit add-in
@@ -23,3 +24,5 @@ copy "%~dp0RevitAddin\HelloCodex.addin" "%DEST%\HelloCodex.addin" /Y
 
 echo Deployment completed.
 endlocal
+yment finished.
+
