@@ -1,5 +1,12 @@
 @echo off
 
+REM Restore packages to generate project.assets.json
+msbuild "%PROJECT%" /t:Restore /p:Configuration=%CONFIG% /p:Platform=%PLATFORM%
+if errorlevel 1 (
+    echo Restore failed.
+    exit /b 1
+)
+
 setlocal
 
 REM Build and deploy HelloCodex Revit add-in

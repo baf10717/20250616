@@ -8,9 +8,9 @@ Run `python hello.py` to print a greeting.
 ## Revit Add-in
 When run from **Add-Ins -> External Tools**, the add-in shows a task dialog that says "Hello Codex!".
 
-jg62no-codex/示範如何使用codex
-### Build and Deploy
-1. Set the `REVIT_API_PATH` environment variable to the folder that contains
+   The script first restores NuGet packages and then invokes *msbuild* on
+   `RevitAddin\RevitAddin.csproj` in **Release**/`x64` mode. The resulting
+   `HelloCodex.dll` is copied together with the `HelloCodex.addin` manifest to
    `RevitAPI.dll` and `RevitAPIUI.dll`.
 2. Open a **Developer Command Prompt for VS 2022** and run
    `codex_build_deploy.bat` from the repository root (for example,
