@@ -9,3 +9,6 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "python3 greet_user.py"
+
+[nix]
+channel = "stable-24_05"
